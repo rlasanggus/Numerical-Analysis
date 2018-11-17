@@ -30,7 +30,7 @@ xopt = x2;
 xu = x1;
 end
 iter=iter+1;
-if xopt~=0, ea = (2 - phi) * abs((xu - xl) / xopt) * 100;end
+if xopt~=0, ea = (phi - 1) * abs((xu - xl) / xopt) * 100;end
 if ea <= es | iter >= maxit,break,end
 end
 x=xopt;fx=f(xopt,varargin{:});

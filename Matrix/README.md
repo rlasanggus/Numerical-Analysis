@@ -42,4 +42,9 @@ Aug(i,k:nb)=Aug(i,k:nb)-factor*Aug(k,k:nb);
 end
 ```  
 ## <pre>LU Factorization</pre>  
+* LU factorization  
+* Gauss elimination as an LU factorization  
+![image](https://user-images.githubusercontent.com/43701183/48657338-d07fae00-ea72-11e8-90a9-a2fa5613dd82.png)  
+
 #### <code>LU Factorization</code>  
+

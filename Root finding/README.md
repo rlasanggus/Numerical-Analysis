@@ -15,8 +15,6 @@ for k=1:length(x)-1
     end
 end
 ```  
-입력받은 값으로 구간을 나누고  
-그 구간에서의 부호 변화를 체크  
 
 #### <code>Bisection Method</code>  
 * Step 1: Choose xl and xusuch that xl and xu  

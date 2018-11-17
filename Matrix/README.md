@@ -45,6 +45,17 @@ end
 * LU factorization  
 * Gauss elimination as an LU factorization  
 ![image](https://user-images.githubusercontent.com/43701183/48657338-d07fae00-ea72-11e8-90a9-a2fa5613dd82.png)  
-
+* Gauss elimination can be used to factorize [A] into [L] and [U]. Recall that the forwardelimination step transforms [A] into an upper triangular matrix [U].  
 #### <code>LU Factorization</code>  
-
+```matlab
+L = eye(n); 
+U = A; 
+% forward elimination 
+for k = 1:n-1 
+    for i = k+1:n 
+        L(i,k) = U(i,k)/U(k,k); 
+        U(i,k) = 0; 
+        U(i,k+1:n) = U(i,k+1:n)-L(i,k)*U(k,k+1:n); 
+    end
+end
+```
